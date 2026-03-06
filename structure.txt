@@ -1,0 +1,76 @@
+bloom/
+├── app/
+│   ├── layout.js                    # Root layout
+│   ├── page.js                      # Home page
+│   ├── drama/page.js                # Drama page
+│   ├── youth/page.js                # Youth Hub page
+│   ├── events/page.js               # Event Planning page
+│   ├── admin/
+│   │   ├── login/page.js            # Admin login
+│   │   └── dashboard/page.js        # Admin dashboard
+│   ├── blog/[slug]/page.js          # Individual blog post
+│   └── api/
+│       ├── auth/[...nextauth]/route.js
+│       ├── content/route.js         # CRUD for page content
+│       ├── newsletter/route.js      # Newsletter subscriptions
+│       ├── comments/route.js        # Blog comments
+│       ├── donate/route.js          # Paystack donation
+│       └── upload/route.js          # Cloudinary uploads
+├── components/
+│   ├── layout/
+│   │   ├── Header.jsx
+│   │   ├── Footer.jsx
+│   │   └── WhatsAppButton.jsx
+│   ├── home/
+│   │   ├── Hero.jsx
+│   │   ├── BranchCards.jsx
+│   │   ├── FounderStory.jsx
+│   │   ├── StatsBar.jsx
+│   │   ├── Testimonials.jsx
+│   │   └── FeaturedMedia.jsx
+│   ├── drama/
+│   │   ├── DramaHero.jsx
+│   │   ├── ScriptCarousel.jsx
+│   │   ├── DonateSection.jsx
+│   │   └── VideoSection.jsx
+│   ├── youth/
+│   │   ├── YouthHero.jsx
+│   │   ├── BlogGrid.jsx
+│   │   ├── CommentSection.jsx
+│   │   └── ResourceDownloads.jsx
+│   ├── events/
+│   │   ├── EventsHero.jsx
+│   │   ├── EventGallery.jsx
+│   │   ├── PricingCards.jsx
+│   │   └── BookingForm.jsx
+│   ├── admin/
+│   │   ├── ContentEditor.jsx
+│   │   ├── MediaManager.jsx
+│   │   ├── NewsletterList.jsx
+│   │   └── CommentsManager.jsx
+│   └── ui/
+│       ├── FloatingBoxes.jsx
+│       ├── ParallaxSection.jsx
+│       ├── AnimatedText.jsx
+│       └── CustomCursor.jsx
+├── lib/
+│   ├── mongodb.js
+│   ├── cloudinary.js
+│   ├── paystack.js
+│   └── auth.js
+├── models/
+│   ├── Content.js
+│   ├── Newsletter.js
+│   ├── Comment.js
+│   └── Media.js
+├── hooks/
+│   ├── useScrollAnimation.js
+│   └── useParallax.js
+├── styles/
+│   └── globals.css
+├── public/
+│   └── fonts/
+├── .env.local
+├── next.config.js
+├── tailwind.config.js
+└── package.json
